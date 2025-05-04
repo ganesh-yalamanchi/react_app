@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Home from "./Home/Home";
-import TicTacToe from "./Tic-Tac-Toe/TicTacToe";
+import routing from "./Routing/routers";
 
 function App(){
+
+    const items = routing();
+
     return(
         <Router>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/tic-tac-toe" element={<TicTacToe/>} />
+                {items.map( i => <Route path={`${i.route}`} element={i.element} />)}
             </Routes>
         </Router>
     );
