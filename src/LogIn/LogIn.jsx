@@ -8,7 +8,7 @@ function LogIn() {
         <>
 
             <div className="logInContainer">
-                <div className="item1 contentCenter">
+                <div className="login contentCenter">
                     <div className="logInDetailsContainer">
                         <div>
                             <img src="/assets/NetworkLOGO.png" alt="logo" />
@@ -56,7 +56,7 @@ function LogIn() {
                         </div>
                     </div>
                 </div>
-                <div className="item2 contentCenter">
+                <div className="illustraion contentCenter">
                     <img src="/assets/login.png" alt="login" />
                 </div>
             </div>

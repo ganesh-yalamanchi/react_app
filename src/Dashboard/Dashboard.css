@@ -1,0 +1,69 @@
+.dashboard{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
+    background-color: #101010;
+    grid-template-areas: " profile activity ";
+}
+
+.profile{
+    grid-area: profile;
+}
+
+.activity{
+    grid-area: activity;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.rightContent{
+    
+    grid-area: rightContent;
+    background-color: #F9FAFC;
+    border-radius: 20px;
+
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    height: 100%;
+    grid-template-areas: "mainContent rightContent";
+}
+
+.mainContent{
+    padding :20px
+}
+
+.sub-content{
+
+    display: grid;
+    grid-auto-rows: 200px 200px 1fr;
+    grid-template-columns:  1fr ;
+    grid-template-areas: 
+    "sub1"
+    "sub2"
+    "sub3";
+
+    gap : 5px;
+
+    height: 100%;
+
+}
+
+.sub1{
+    grid-area: sub1;
+}
+
+.sub2{
+    grid-area: sub2;
+    background-color: red;
+
+
+}
+
+.sub3{
+    grid-area: sub3;
+    background-color: green;
+}

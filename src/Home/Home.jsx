@@ -20,7 +20,7 @@ function Home() {
     }
 
     return (
-        <>
+        <div className="homeBody">
 
             <div className="headerContainer">
 
@@ -50,7 +50,7 @@ function Home() {
                    return item.id !== 0 && <div className={`item item${item.id}`} onClick={() => history(item.route)}> {item.name} </div>
                 })}
             </div>
-        </>
+        </div>
     );
 }
 

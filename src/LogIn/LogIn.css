@@ -3,17 +3,21 @@
     grid-template-columns: 1fr 1fr;
     height: 100vh;
     background-color: #F1F3F6;
+    grid-template-areas: " illustraion login ";
 }
 
 .contentCenter{
-    display: flex;
+    display: flex;  
     justify-content: center;
     align-items: center;
 }
 
-.item2{
-    grid-column: 1;
-    grid-row: 1;
+.login{
+    grid-area: login;
+}
+
+.illustraion{
+    grid-area: illustraion;
 }
 
 .logInDetailsContainer{
